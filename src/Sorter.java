@@ -13,6 +13,10 @@ public class Sorter {
         }
     }
 
+    public static void sort(int[] arr) {
+        insertionSort(arr);
+    }
+
     public static void insertionSort(int[] arr) {
         int n = arr.length;
         for (int i = 1; i < n; i++) {
