@@ -22,5 +22,10 @@ public class Sorter {
             arr[minIndex] = arr[i];
             arr[i] = temp;
         }
+
+    }
+    // Method 'sort' to act as a convenient interface
+    public static void sort(int[] array) {
+        selectionSort(array);
     }
 }
