@@ -2,23 +2,23 @@ public class Sorter {
     public static void main(String[] args) {
         int[] arr1 = {9, 5, 1, 4, 3};
         int[] arr2 = {7, 2, 6, 0, 8};
-        insertionSort(arr1);
+        insertSort(arr1);
+        selectSort(arr2)
         for (int num : arr1) {
             System.out.print(num + " ");
         }
         System.out.println();
-        selectionSort(arr2);
         for (int num : arr2) {
             System.out.print(num + " ");
         }
 
     }
     // Method 'sort' to act as a convenient interface
-    public static void sort(int[] array) {
+    public static void selectSort(int[] array) {
         selectionSort(array);
     }
 
-    public static void sort(int[] arr) {
+    public static void insertSort(int[] arr) {
         insertionSort(arr);
     }
 
